@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gymtracker-back
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: gymtracker
+  source:
+    repoURL: https://github.com/PTI-PROJECT-2026/GymTracker-back.git
+    targetRevision: main
+    path: k8s
+    directory:
+      recurse: false
+      exclude: "{argocd/**,*.example.yaml}"
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gymtracker
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - PrunePropagationPolicy=foreground

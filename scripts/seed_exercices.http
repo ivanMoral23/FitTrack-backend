@@ -1,0 +1,756 @@
+@baseUrl = http://nattech.fib.upc.edu:40431
+@token = nuestra_clave_secreta_no_se_debe_compartir_con_nadie
+
+### ─────────────────────────────────────────
+### PECHO
+### ─────────────────────────────────────────
+POST {{baseUrl}}/exercices/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "name": "Press de banca con barra",
+    "difficulty": "medium",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Tríceps", "Hombro"],
+    "equipment": ["barbell", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Túmbate en el banco con los pies apoyados en el suelo.",
+      "Agarra la barra con un agarre ligeramente más ancho que los hombros.",
+      "Baja la barra de forma controlada hasta rozar el pecho.",
+      "Empuja la barra hacia arriba extendiendo los codos completamente."
+    ]
+  },
+  {
+    "name": "Press de banca inclinado con barra",
+    "difficulty": "medium",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Tríceps", "Hombro"],
+    "equipment": ["barbell", "incline bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Ajusta el banco a 30-45 grados.",
+      "Agarra la barra con agarre ligeramente más ancho que los hombros.",
+      "Baja la barra controladamente hacia la parte superior del pecho.",
+      "Empuja hacia arriba y ligeramente hacia atrás."
+    ]
+  },
+  {
+    "name": "Press de banca declinado con barra",
+    "difficulty": "medium",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Tríceps"],
+    "equipment": ["barbell", "decline bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Ajusta el banco en posición declinada.",
+      "Agarra la barra y bájala controladamente hacia la parte inferior del pecho.",
+      "Empuja hacia arriba hasta extender completamente los brazos."
+    ]
+  },
+  {
+    "name": "Press de banca con mancuernas",
+    "difficulty": "medium",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Tríceps", "Hombro"],
+    "equipment": ["dumbbells", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Túmbate en el banco con una mancuerna en cada mano.",
+      "Baja las mancuernas hasta el nivel del pecho con los codos a 45-75 grados.",
+      "Empuja hacia arriba juntando ligeramente las mancuernas en la parte superior."
+    ]
+  },
+  {
+    "name": "Aperturas con mancuernas",
+    "difficulty": "easy",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Hombro"],
+    "equipment": ["dumbbells", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Túmbate en el banco con una mancuerna en cada mano, brazos extendidos sobre el pecho.",
+      "Abre los brazos hacia los lados de forma arqueada hasta sentir el estiramiento en el pecho.",
+      "Vuelve a la posición inicial contrayendo el pecho."
+    ]
+  },
+  {
+    "name": "Fondos en paralelas (pecho)",
+    "difficulty": "hard",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Tríceps", "Hombro"],
+    "equipment": ["parallel bars"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Sujétate en las paralelas con el torso ligeramente inclinado hacia adelante.",
+      "Baja el cuerpo doblando los codos hasta que los hombros queden a la altura de los codos.",
+      "Empuja hacia arriba extendiendo los brazos completamente."
+    ]
+  },
+  {
+    "name": "Cruce de poleas",
+    "difficulty": "easy",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": [],
+    "equipment": ["cable machine"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Colócate en el centro de la máquina de poleas con los cables a la altura de los hombros.",
+      "Con los brazos ligeramente flexionados, junta las manos frente al pecho.",
+      "Vuelve a la posición inicial de forma controlada."
+    ]
+  },
+  {
+    "name": "Flexiones",
+    "difficulty": "easy",
+    "muscle_group": "Pecho",
+    "secondary_muscle_groups": ["Tríceps", "Hombro"],
+    "equipment": [],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_push",
+    "instructions": [
+      "Colócate en posición de plancha con las manos a la anchura de los hombros.",
+      "Baja el cuerpo hasta que el pecho casi toque el suelo.",
+      "Empuja hacia arriba extendiendo los brazos."
+    ]
+  }
+]
+### ─────────────────────────────────────────
+POST {{baseUrl}}/exercices/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "name": "Press militar con barra",
+    "difficulty": "medium",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": ["Tríceps", "Trapecios"],
+    "equipment": ["barbell"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "vertical_push",
+    "instructions": [
+      "De pie o sentado, agarra la barra a la altura de los hombros con agarre prono.",
+      "Empuja la barra hacia arriba sobre la cabeza hasta extender completamente los brazos.",
+      "Baja de forma controlada hasta la posición inicial."
+    ]
+  },
+  {
+    "name": "Press militar con mancuernas",
+    "difficulty": "medium",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": ["Tríceps"],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "vertical_push",
+    "instructions": [
+      "Sentado o de pie, sostén las mancuernas a la altura de los hombros con los codos a 90 grados.",
+      "Empuja hacia arriba hasta extender los brazos.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Press Arnold",
+    "difficulty": "medium",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": ["Tríceps"],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "vertical_push",
+    "instructions": [
+      "Sostén las mancuernas frente a ti con las palmas hacia ti y los codos doblados.",
+      "Al empujar hacia arriba, rota las muñecas hacia afuera.",
+      "Baja volviendo a rotar las muñecas hacia dentro."
+    ]
+  },
+  {
+    "name": "Elevaciones laterales con mancuernas",
+    "difficulty": "easy",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": [],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "other",
+    "instructions": [
+      "De pie con una mancuerna en cada mano a los costados.",
+      "Levanta los brazos hacia los lados hasta la altura de los hombros con los codos ligeramente flexionados.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Elevaciones frontales con mancuernas",
+    "difficulty": "easy",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": [],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "vertical_push",
+    "instructions": [
+      "De pie con una mancuerna en cada mano frente a los muslos.",
+      "Levanta un brazo hacia adelante hasta la altura de los hombros.",
+      "Baja y alterna con el otro brazo."
+    ]
+  },
+  {
+    "name": "Pájaros con mancuernas",
+    "difficulty": "easy",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": ["Espalda"],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "horizontal_pull",
+    "instructions": [
+      "Inclínate hacia adelante con las mancuernas colgando.",
+      "Levanta los brazos hacia los lados hasta la altura de los hombros.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Face Pull en polea",
+    "difficulty": "easy",
+    "muscle_group": "Hombro",
+    "secondary_muscle_groups": ["Espalda", "Trapecios"],
+    "equipment": ["cable machine", "rope attachment"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "horizontal_pull",
+    "instructions": [
+      "Ajusta la polea a la altura de la cara y usa una cuerda.",
+      "Tira hacia la cara separando las manos y llevando los codos hacia atrás.",
+      "Vuelve a la posición inicial de forma controlada."
+    ]
+  }
+]
+
+### ─────────────────────────────────────────
+### TRÍCEPS
+### ─────────────────────────────────────────
+POST {{baseUrl}}/exercices/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "name": "Press francés con barra EZ",
+    "difficulty": "medium",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["ez bar", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "Túmbate en el banco y sostén la barra EZ sobre el pecho con brazos extendidos.",
+      "Dobla los codos llevando la barra hacia la frente.",
+      "Extiende los brazos para volver a la posición inicial."
+    ]
+  },
+  {
+    "name": "Extensión de tríceps en polea alta (cuerda)",
+    "difficulty": "easy",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["cable machine", "rope attachment"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "De pie frente a la polea alta, agarra la cuerda con ambas manos.",
+      "Mantén los codos pegados al cuerpo.",
+      "Empuja hacia abajo extendiendo los brazos y separando los extremos de la cuerda al final."
+    ]
+  },
+  {
+    "name": "Extensión de tríceps sobre la cabeza con mancuerna",
+    "difficulty": "easy",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["dumbbell"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "Sostén una mancuerna con ambas manos sobre la cabeza con los brazos extendidos.",
+      "Dobla los codos bajando la mancuerna detrás de la cabeza.",
+      "Extiende los brazos para volver a la posición inicial."
+    ]
+  },
+  {
+    "name": "Patada de tríceps con mancuerna",
+    "difficulty": "easy",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["dumbbell", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "Apoya una rodilla y una mano en el banco, inclínate hacia adelante.",
+      "Sostén la mancuerna con el brazo libre, codo doblado a 90 grados.",
+      "Extiende el brazo hacia atrás hasta que quede paralelo al suelo."
+    ]
+  },
+  {
+    "name": "Fondos en banco",
+    "difficulty": "easy",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": ["Hombro", "Pecho"],
+    "equipment": ["bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "Apoya las manos en el borde del banco con los dedos hacia adelante.",
+      "Baja el cuerpo doblando los codos hasta que formen 90 grados.",
+      "Empuja hacia arriba extendiendo los brazos."
+    ]
+  },
+  {
+    "name": "Press cerrado con barra",
+    "difficulty": "medium",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": ["Pecho", "Hombro"],
+    "equipment": ["barbell", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "Túmbate en el banco y agarra la barra con un agarre estrecho (hombros anchura).",
+      "Baja la barra hacia el pecho bajo manteniendo los codos cerca del cuerpo.",
+      "Empuja hacia arriba extendiendo los brazos."
+    ]
+  },
+  {
+    "name": "Extensión de tríceps en polea (barra recta)",
+    "difficulty": "easy",
+    "muscle_group": "Tríceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["cable machine", "straight bar"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "De pie frente a la polea, agarra la barra con agarre prono.",
+      "Mantén los codos pegados al cuerpo y extiende los brazos hacia abajo.",
+      "Vuelve a la posición inicial de forma controlada."
+    ]
+  }
+]
+
+### ─────────────────────────────────────────
+### ESPALDA
+### ─────────────────────────────────────────
+POST {{baseUrl}}/exercices/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "name": "Dominadas",
+    "difficulty": "hard",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Bíceps", "Hombro"],
+    "equipment": ["pull-up bar"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "vertical_pull",
+    "instructions": [
+      "Cuélgate de la barra con agarre prono y manos más anchas que los hombros.",
+      "Tira del cuerpo hacia arriba hasta que la barbilla supere la barra.",
+      "Baja de forma controlada hasta extender completamente los brazos."
+    ]
+  },
+  {
+    "name": "Jalón al pecho en polea",
+    "difficulty": "medium",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Bíceps"],
+    "equipment": ["cable machine", "lat bar"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "vertical_pull",
+    "instructions": [
+      "Siéntate en la máquina y agarra la barra con agarre prono ancho.",
+      "Tira de la barra hacia el pecho superior manteniendo el torso ligeramente reclinado.",
+      "Vuelve a la posición inicial de forma controlada."
+    ]
+  },
+  {
+    "name": "Remo con barra",
+    "difficulty": "medium",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Bíceps", "Trapecios"],
+    "equipment": ["barbell"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_pull",
+    "instructions": [
+      "Inclínate hacia adelante con la barra en las manos y la espalda recta.",
+      "Tira de la barra hacia el abdomen manteniendo los codos cerca del cuerpo.",
+      "Baja la barra de forma controlada."
+    ]
+  },
+  {
+    "name": "Remo con mancuerna a una mano",
+    "difficulty": "medium",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Bíceps"],
+    "equipment": ["dumbbell", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_pull",
+    "instructions": [
+      "Apoya una mano y rodilla en el banco.",
+      "Con la otra mano sostén la mancuerna y tírala hacia la cadera.",
+      "Baja de forma controlada manteniendo la espalda recta."
+    ]
+  },
+  {
+    "name": "Remo en polea baja",
+    "difficulty": "medium",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Bíceps"],
+    "equipment": ["cable machine"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "horizontal_pull",
+    "instructions": [
+      "Siéntate frente a la polea baja y agarra el accesorio.",
+      "Tira hacia el abdomen manteniendo la espalda recta y los codos cerca del cuerpo.",
+      "Vuelve a la posición inicial de forma controlada."
+    ]
+  },
+  {
+    "name": "Peso muerto convencional",
+    "difficulty": "hard",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Glúteos", "Pierna", "Trapecios"],
+    "equipment": ["barbell"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "hinge",
+    "instructions": [
+      "Coloca la barra en el suelo, pies a la anchura de las caderas.",
+      "Agáchate manteniendo la espalda recta y agarra la barra.",
+      "Levántate extendiendo las caderas y las rodillas simultáneamente.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Hiperextensiones",
+    "difficulty": "easy",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Glúteos"],
+    "equipment": ["hyperextension bench"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "hinge",
+    "instructions": [
+      "Colócate en el banco de hiperextensiones con las caderas apoyadas.",
+      "Baja el torso hacia abajo de forma controlada.",
+      "Levanta el torso hasta que quede alineado con las piernas."
+    ]
+  },
+  {
+    "name": "Pull-over con mancuerna",
+    "difficulty": "medium",
+    "muscle_group": "Espalda",
+    "secondary_muscle_groups": ["Pecho"],
+    "equipment": ["dumbbell", "bench"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "vertical_pull",
+    "instructions": [
+      "Túmbate transversalmente en el banco con los hombros apoyados.",
+      "Sostén la mancuerna con ambas manos sobre el pecho.",
+      "Baja la mancuerna hacia atrás sobre la cabeza manteniendo los codos ligeramente flexionados.",
+      "Vuelve a la posición inicial."
+    ]
+  }
+]
+
+### ─────────────────────────────────────────
+### BÍCEPS
+### ─────────────────────────────────────────
+POST {{baseUrl}}/exercices/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "name": "Curl con barra",
+    "difficulty": "easy",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": ["Antebrazo"],
+    "equipment": ["barbell"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "De pie, agarra la barra con agarre supino a la anchura de los hombros.",
+      "Dobla los codos llevando la barra hacia los hombros.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Curl con barra EZ",
+    "difficulty": "easy",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": ["Antebrazo"],
+    "equipment": ["ez bar"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "De pie, agarra la barra EZ por las empuñaduras internas con agarre supino.",
+      "Dobla los codos llevando la barra hacia los hombros.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Curl con mancuernas alterno",
+    "difficulty": "easy",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": ["Antebrazo"],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "De pie con una mancuerna en cada mano, palmas hacia adelante.",
+      "Dobla un brazo llevando la mancuerna hacia el hombro.",
+      "Baja y repite con el otro brazo."
+    ]
+  },
+  {
+    "name": "Curl martillo",
+    "difficulty": "easy",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": ["Antebrazo", "Braquial"],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "De pie con una mancuerna en cada mano, palmas enfrentadas entre sí.",
+      "Dobla los codos llevando las mancuernas hacia los hombros sin rotar las muñecas.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Curl predicador con barra EZ",
+    "difficulty": "medium",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["ez bar", "preacher bench"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "Siéntate en el banco predicador con los brazos apoyados en el pad.",
+      "Agarra la barra EZ con agarre supino.",
+      "Dobla los codos llevando la barra hacia los hombros.",
+      "Baja de forma controlada hasta casi extender los brazos."
+    ]
+  },
+  {
+    "name": "Curl en polea baja",
+    "difficulty": "easy",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["cable machine"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "De pie frente a la polea baja, agarra la barra o cuerda con agarre supino.",
+      "Dobla los codos llevando las manos hacia los hombros.",
+      "Vuelve a la posición inicial de forma controlada."
+    ]
+  },
+  {
+    "name": "Curl concentrado",
+    "difficulty": "easy",
+    "muscle_group": "Bíceps",
+    "secondary_muscle_groups": [],
+    "equipment": ["dumbbell"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "Sentado, apoya el codo en la cara interna del muslo.",
+      "Dobla el codo llevando la mancuerna hacia el hombro.",
+      "Baja de forma controlada."
+    ]
+  }
+]
+
+### ─────────────────────────────────────────
+### PIERNA
+### ─────────────────────────────────────────
+POST {{baseUrl}}/exercices/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "name": "Sentadilla con barra",
+    "difficulty": "hard",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": ["Glúteos", "Espalda"],
+    "equipment": ["barbell", "squat rack"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "squat",
+    "instructions": [
+      "Coloca la barra en la parte alta de la espalda.",
+      "Pies a la anchura de los hombros, punta de los pies ligeramente hacia afuera.",
+      "Baja doblando rodillas y caderas hasta que los muslos queden paralelos al suelo.",
+      "Sube extendiendo rodillas y caderas."
+    ]
+  },
+  {
+    "name": "Sentadilla frontal",
+    "difficulty": "hard",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": ["Glúteos", "Espalda"],
+    "equipment": ["barbell", "squat rack"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "squat",
+    "instructions": [
+      "Coloca la barra en la parte delantera de los hombros.",
+      "Baja manteniendo el torso erguido hasta que los muslos estén paralelos al suelo.",
+      "Sube extendiendo rodillas y caderas."
+    ]
+  },
+  {
+    "name": "Prensa de piernas",
+    "difficulty": "medium",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": ["Glúteos"],
+    "equipment": ["leg press machine"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "squat",
+    "instructions": [
+      "Siéntate en la máquina con los pies en la plataforma a la anchura de los hombros.",
+      "Dobla las rodillas bajando la plataforma de forma controlada.",
+      "Empuja con los talones hasta extender las piernas sin bloquear las rodillas."
+    ]
+  },
+  {
+    "name": "Zancadas con mancuernas",
+    "difficulty": "medium",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": ["Glúteos"],
+    "equipment": ["dumbbells"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "lunge",
+    "instructions": [
+      "De pie con una mancuerna en cada mano.",
+      "Da un paso largo hacia adelante y baja la rodilla trasera hacia el suelo.",
+      "Vuelve a la posición inicial y repite con la otra pierna."
+    ]
+  },
+  {
+    "name": "Peso muerto rumano",
+    "difficulty": "medium",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": ["Glúteos", "Espalda"],
+    "equipment": ["barbell"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "hinge",
+    "instructions": [
+      "De pie con la barra en las manos, piernas casi extendidas.",
+      "Inclínate hacia adelante manteniendo la espalda recta, bajando la barra por las piernas.",
+      "Vuelve a la posición inicial apretando los glúteos."
+    ]
+  },
+  {
+    "name": "Extensión de cuádriceps en máquina",
+    "difficulty": "easy",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": [],
+    "equipment": ["leg extension machine"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_extension",
+    "instructions": [
+      "Siéntate en la máquina con el pad sobre el empeine.",
+      "Extiende las rodillas levantando el peso hasta que las piernas estén rectas.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Curl femoral tumbado",
+    "difficulty": "easy",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": [],
+    "equipment": ["leg curl machine"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "isolation_curl",
+    "instructions": [
+      "Túmbate boca abajo en la máquina con el pad bajo los tobillos.",
+      "Dobla las rodillas llevando los talones hacia los glúteos.",
+      "Baja de forma controlada."
+    ]
+  },
+  {
+    "name": "Elevación de talones de pie",
+    "difficulty": "easy",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": [],
+    "equipment": ["calf raise machine"],
+    "recordType": "weight_reps",
+    "mechanics": "isolation",
+    "movement_pattern": "other",
+    "instructions": [
+      "De pie en la máquina o en un escalón, apoya la punta de los pies.",
+      "Levanta los talones lo máximo posible contrayendo el gemelo.",
+      "Baja lentamente hasta notar el estiramiento."
+    ]
+  },
+  {
+    "name": "Sentadilla goblet",
+    "difficulty": "easy",
+    "muscle_group": "Pierna",
+    "secondary_muscle_groups": ["Glúteos", "Core"],
+    "equipment": ["kettlebell"],
+    "recordType": "weight_reps",
+    "mechanics": "compound",
+    "movement_pattern": "squat",
+    "instructions": [
+      "Sostén una kettlebell o mancuerna frente al pecho con ambas manos.",
+      "Pies a la anchura de los hombros, punta ligeramente hacia afuera.",
+      "Baja hasta que los muslos queden paralelos al suelo.",
+      "Sube extendiendo rodillas y caderas."
+    ]
+  }
+]

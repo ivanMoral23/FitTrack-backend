@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: gymtracker
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  description: "GymTracker — PTI 2026"
+  sourceRepos:
+    - https://github.com/PTI-PROJECT-2026/GymTracker-back.git
+  destinations:
+    - namespace: gymtracker
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: ""
+      kind: Namespace
+  namespaceResourceWhitelist:
+    - group: "apps"
+      kind: Deployment
+    - group: ""
+      kind: Service
+    - group: ""
+      kind: PersistentVolumeClaim
+    - group: ""
+      kind: Secret
+    - group: ""
+      kind: ConfigMap

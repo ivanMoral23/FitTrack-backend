@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gymtracker-back
+  namespace: gymtracker
+  labels:
+    app: gymtracker-back
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gymtracker-back
+  template:
+    metadata:
+      labels:
+        app: gymtracker-back
+    spec:
+      containers:
+        - name: gymtracker-back
+          image: santa2005/gymtracker-back:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+          env:
+            - name: PORT
+              value: "8081"
+            - name: NODE_ENV
+              value: "production"
+            - name: MCP_SERVER_URL
+              value: "http://gymtracker-mcp-server:8083/sse"
+            - name: BASE_URL
+              value: "http://nattech.fib.upc.edu:40431"
+            - name: SECRET_JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: gymtracker-secrets
+                  key: SECRET_JWT_KEY
+            - name: USDA_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: gymtracker-secrets
+                  key: USDA_API_KEY
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: gymtracker-secrets
+                  key: MONGO_URI
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8081
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8081
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 3

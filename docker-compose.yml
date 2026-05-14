@@ -1,0 +1,43 @@
+version: '3'
+services:
+  backend:
+    build: .
+    container_name: gymtracker-back
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+      - "443:8443"
+    environment:
+      - MCP_SERVER_URL=http://mcp-server:8083/sse
+      - MONGO_URI=mongodb://mongodb:27017/gymtracker
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "nattech.fib.upc.edu:host-gateway"
+    env_file:
+      - .env
+    depends_on:
+      - mcp-server
+      - mongodb
+
+  mcp-server:
+    build: ../GymTracker-mcp-server
+    container_name: gymtracker-mcp-server
+    restart: unless-stopped
+    ports:
+      - "8083:8083"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/gymtracker
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: gymtracker-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
