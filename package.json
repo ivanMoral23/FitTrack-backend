@@ -1,7 +1,7 @@
 {
-  "name": "gymtracker-back",
+  "name": "fittrack-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "FitTrack Backend 🚀",
   "main": "server.js",
   "type": "module",
   "scripts": {

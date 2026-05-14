@@ -1,4 +1,4 @@
-# GymTracker Backend 🚀
+# FitTrack Backend 🚀
 
 A robust backend for workout and nutrition management, powered by Artificial Intelligence. Originally developed as a project for FIB-UPC and evolved into a comprehensive fitness solution.
 
