@@ -1,51 +1,51 @@
 # GymTracker Backend 🚀
 
-Backend robusto para la gestión de entrenamientos y nutrición, potenciado por Inteligencia Artificial. Desarrollado originalmente como proyecto para la FIB-UPC y evolucionado hacia una solución integral de fitness.
+A robust backend for workout and nutrition management, powered by Artificial Intelligence. Originally developed as a project for FIB-UPC and evolved into a comprehensive fitness solution.
 
-## 🛠️ Tecnologías
+## 🛠️ Tech Stack
 - **Runtime:** Node.js
 - **Framework:** Express.js
-- **Base de Datos:** MongoDB (Mongoose)
-- **IA:** Integración con Gemini, Groq y Cohere para insights personalizados.
-- **Autenticación:** JWT (JSON Web Tokens)
-- **Infraestructura:** Docker & Kubernetes (K8s)
+- **Database:** MongoDB (Mongoose)
+- **AI:** Integration with Gemini, Groq, and Cohere for personalized insights.
+- **Authentication:** JWT (JSON Web Tokens)
+- **Infrastructure:** Docker & Kubernetes (K8s)
 
-## ✨ Funcionalidades Principales
-- **Gestión de Usuarios:** Registro, login y perfiles personalizados.
-- **Seguimiento de Entrenamientos:** Creación y registro de rutinas y sesiones.
-- **Módulo de Nutrición:** Seguimiento de ingesta calórica y macronutrientes.
-- **IA Insights:** Generación de recomendaciones personalizadas basadas en el progreso del usuario.
-- **Chatbot Inteligente:** Asistente virtual para resolver dudas sobre ejercicios y dietas.
+## ✨ Key Features
+- **User Management:** Registration, login, and personalized user profiles.
+- **Workout Tracking:** Creation and logging of routines and exercise sessions.
+- **Nutrition Module:** Caloric intake and macronutrient breakdown tracking.
+- **AI Insights:** Generation of personalized recommendations based on user progress.
+- **Intelligent Chatbot:** Virtual assistant to solve doubts about exercises and diets.
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Usage
 
-1. **Clonar el repositorio:**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/TU_USUARIO/GymTracker-Backend.git
-   cd GymTracker-Backend
+   git clone https://github.com/ivanMoral23/FitTrack-backend.git
+   cd FitTrack-backend
    ```
 
-2. **Instalar dependencias:**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Configurar variables de entorno:**
-   Copia el archivo `.env.example` a `.env` y rellena tus claves:
+3. **Configure environment variables:**
+   Copy the `.env.example` file to `.env` and fill in your keys:
    ```bash
    cp .env.example .env
    ```
 
-4. **Ejecutar en desarrollo:**
+4. **Run in development mode:**
    ```bash
    npm run dev
    ```
 
 ## 🐳 Docker
-El proyecto incluye configuración para Docker Compose:
+The project includes Docker Compose configuration for easy setup:
 ```bash
 docker-compose up --build
 ```
 
 ---
-*Desarrollado por Iván Fernández - 2026*
+*Developed by Iván Fernández - 2026*
