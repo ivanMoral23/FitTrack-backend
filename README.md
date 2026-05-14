@@ -48,4 +48,4 @@ docker-compose up --build
 ```
 
 ---
-*Developed by Iván Fernández - 2026*
+*Developed by Iván Moral - 2026*
